@@ -588,37 +588,39 @@
                         <h3 class="visionary"> Whether it’s <strong>web development, design, or custom
                                 solutions</strong>, I’ve got the skills to turn your vision into reality. Let’s work
                             together and create something amazing.</h3>
-                        <form>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">NAME*</p>
-                                    <input type="text" placeholder="Your Full Name" name="YourName" autocomplete="off">
-                                </div>
-                                <div class="labal-input">
-                                    <p class="labal">EMAIL*</p>
-                                    <input type="text" placeholder="Your Email Address" name="EmailID"
-                                        autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">SUBJECT*</p>
-                                    <input type="text" placeholder="Your Subject" name="subject" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">MESSAGE*</p>
-                                    <input type="text" placeholder="Write Your Message..." name="message"
-                                        autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="download-btn">
-                                <a href="#" class="aryaBtn">
-                                    Send Message <img src="assets/images/svg/right-arrow.svg" alt="right-arrow">
-                                </a>
-                            </div>
-                        </form>
+                        <form id="whatsappForm">
+  <div class="input-main">
+    <div class="labal-input">
+      <p class="labal">NAME*</p>
+      <input type="text" placeholder="Your Full Name" name="YourName" id="YourName" autocomplete="off" required>
+    </div>
+    <div class="labal-input">
+      <p class="labal">EMAIL*</p>
+      <input type="email" placeholder="Your Email Address" name="EmailID" id="EmailID" autocomplete="off" required>
+    </div>
+  </div>
+
+  <div class="input-main">
+    <div class="labal-input">
+      <p class="labal">SUBJECT*</p>
+      <input type="text" placeholder="Your Subject" name="subject" id="subject" autocomplete="off" required>
+    </div>
+  </div>
+
+  <div class="input-main">
+    <div class="labal-input">
+      <p class="labal">MESSAGE*</p>
+      <input type="text" placeholder="Write Your Message..." name="message" id="message" autocomplete="off" required>
+    </div>
+  </div>
+
+  <div class="download-btn">
+    <button type="submit" class="aryaBtn">
+      Send Message <img src="assets/images/svg/right-arrow.svg" alt="right-arrow">
+    </button>
+  </div>
+</form>
+
                     </section>
                     <!-- ====================================== Footer ===================================== -->
                     <footer>
@@ -674,6 +676,34 @@
     <script src="assets/javascript/bg-animation/fss.min.js"></script>
     <script src="assets/javascript/bg-animation/circle.js"></script>
     <script src="assets/javascript/script.js"></script>
+
+    <script>
+  document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent normal form submission
+
+    // Get form values
+    const name = document.getElementById("YourName").value.trim();
+    const email = document.getElementById("EmailID").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Your WhatsApp number with country code (India = 91)
+    const phone = "918000553597";
+
+    // Format WhatsApp message
+    const text = `*New Inquiry From Website*\n\n👤 Name: ${name}\n📧 Email: ${email}\n📝 Subject: ${subject}\n💬 Message: ${message}`;
+
+    // Encode message for URL
+    const encodedText = encodeURIComponent(text);
+
+    // WhatsApp URL
+    const whatsappURL = `https://wa.me/${phone}?text=${encodedText}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+
 </body>
 
 </html>
