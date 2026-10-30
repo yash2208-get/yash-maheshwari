@@ -1,682 +1,1577 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Maheshwari</title>
-    <link rel="icon" type="image/x-icon" href="logo-yash.png">
-    <link rel="stylesheet" href="assets/css/swap.css">
-    <link rel="stylesheet" href="assets/css/fancybox.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media_query.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>document.documentElement.classList.add('js')</script>
+  <!-- SEO:START -->
+  <title>Yash Maheshwari — Senior Software Engineer · AI Engineer · Backend Architect</title>
+  <meta name="description"
+    content="Yash Maheshwari is a Software Engineer with 3.5+ years building scalable Laravel, Node.js and Python (FastAPI) backends, AI agents, RAG pipelines, automation and web-scraping systems. Open to remote roles.">
+  <meta name="keywords"
+    content="Yash Maheshwari, Senior Software Engineer, Full Stack Developer, Backend Architect, AI Engineer, Prompt Engineer, Automation Expert, Web Scraping Specialist, Laravel, PHP, Node.js, Python, FastAPI, LangChain, LangGraph, OpenAI, Ollama, RAG, AI Agents, MCP, Playwright, Selenium, BeautifulSoup, MongoDB, Vector Database, Remote">
+  <meta name="author" content="Yash Maheshwari">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://yash2208-get.github.io/yash-maheshwari/">
+  <meta name="theme-color" content="#05060a">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Yash Maheshwari">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Yash Maheshwari — Senior Software Engineer & AI Engineer">
+  <meta property="og:description"
+    content="Scalable backends, AI agents, RAG and automation built for production. 3.5+ years · 50+ projects · Open to remote roles.">
+  <meta property="og:url" content="https://yash2208-get.github.io/yash-maheshwari/">
+  <meta property="og:image" content="https://yash2208-get.github.io/yash-maheshwari/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Yash Maheshwari — Backends that scale. AI that ships.">
+  <meta property="profile:first_name" content="Yash">
+  <meta property="profile:last_name" content="Maheshwari">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yash Maheshwari — Senior Software Engineer & AI Engineer">
+  <meta name="twitter:description"
+    content="Scalable backends, AI agents, RAG and automation built for production. Open to remote roles.">
+  <meta name="twitter:image" content="https://yash2208-get.github.io/yash-maheshwari/assets/og-image.png">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yash Maheshwari",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Senior Software Engineer, Backend Architect and AI Engineer building scalable backends, AI agents, RAG pipelines and automation.",
+    "url": "https://yash2208-get.github.io/yash-maheshwari/",
+    "email": "mailto:yashajmera1203@gmail.com",
+    "image": "https://yash2208-get.github.io/yash-maheshwari/yash.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ajmer", "addressRegion": "Rajasthan", "addressCountry": "IN" },
+    "worksFor": { "@type": "Organization", "name": "D2i Technology" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Maharshi Dayanand Saraswati University" },
+      { "@type": "CollegeOrUniversity", "name": "JAN University" }
+    ],
+    "knowsAbout": ["Laravel", "PHP", "Node.js", "Python", "FastAPI", "LangChain", "LangGraph", "OpenAI API", "Ollama", "Retrieval-Augmented Generation", "AI Agents", "Model Context Protocol", "Prompt Engineering", "Playwright", "Selenium", "BeautifulSoup", "Web Scraping", "MongoDB", "MySQL", "Vector Databases", "System Design"],
+    "sameAs": ["https://github.com/yash2208-get", "https://www.linkedin.com/in/yash-maheshwari800055"]
+  }
+  </script>
+  <!-- SEO:END -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.github.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="dark-mode">
-    <!-- ====================================== Preloader ===================================== -->
-    <div class="preloader">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="loade-svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-        <div class="loader-main">
-            <div class="loading">
-                <span data-text="W">W</span>
-                <span data-text="E">E</span>
-                <span data-text="L">L</span>
-                <span data-text="C">C</span>
-                <span data-text="O">O</span>
-                <span data-text="M">M</span>
-                <span data-text="E">E</span>
-            </div>
-        </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob b1"></span><span class="aurora__blob b2"></span><span class="aurora__blob b3"></span><span
+      class="aurora__blob b4"></span>
+    <div class="aurora__grid"></div>
+    <div class="aurora__noise"></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ SVG ICON SPRITE (Lucide-style, 24px, stroke) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+        <path d="M9 18c-4.51 2-5-2-7-2" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect width="4" height="12" x="2" y="9" />
+        <circle cx="4" cy="4" r="2" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <path d="m7 10 5 5 5-5" />
+        <path d="M12 15V3" />
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24">
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M15 3h6v6" />
+        <path d="M10 14 21 3" />
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      </symbol>
+      <symbol id="i-server" viewBox="0 0 24 24">
+        <rect width="20" height="8" x="2" y="2" rx="2" />
+        <rect width="20" height="8" x="2" y="14" rx="2" />
+        <path d="M6 6h.01" />
+        <path d="M6 18h.01" />
+      </symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24">
+        <path
+          d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+        <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+        <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+      </symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24">
+        <rect width="16" height="16" x="4" y="4" rx="2" />
+        <rect width="6" height="6" x="9" y="9" rx="1" />
+        <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" />
+      </symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24">
+        <path d="M12 8V4H8" />
+        <rect width="16" height="12" x="4" y="8" rx="2" />
+        <path d="M2 14h2M20 14h2M15 13v2M9 13v2" />
+      </symbol>
+      <symbol id="i-workflow" viewBox="0 0 24 24">
+        <rect width="8" height="8" x="3" y="3" rx="2" />
+        <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+        <rect width="8" height="8" x="13" y="13" rx="2" />
+      </symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24">
+        <path d="m4 17 6-6-6-6" />
+        <path d="M12 19h8" />
+      </symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24">
+        <path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2" />
+        <circle cx="12" cy="12" r="3" />
+        <path d="m16 16-1.9-1.9" />
+      </symbol>
+      <symbol id="i-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+        <path d="M3 12a9 3 0 0 0 18 0" />
+      </symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24">
+        <path
+          d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z" />
+        <path d="M20 3v4M22 5h-4" />
+      </symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24">
+        <path
+          d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path
+          d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+      </symbol>
+      <symbol id="i-map-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-send" viewBox="0 0 24 24">
+        <path
+          d="M14.54 21.69a.5.5 0 0 0 .94-.02l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.02.94l7.93 3.18a2 2 0 0 1 1.11 1.11z" />
+        <path d="m21.85 2.15-10.94 10.94" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect width="14" height="14" x="8" y="8" rx="2" />
+        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M20 6 9 17l-5-5" />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24">
+        <path d="M18 6 6 18M6 6l12 12" />
+      </symbol>
+      <symbol id="i-command" viewBox="0 0 24 24">
+        <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.3-4.3" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path
+          d="M11.52 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.76a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .3-.9l5.16-.76a2.12 2.12 0 0 0 1.6-1.16z" />
+      </symbol>
+      <symbol id="i-fork" viewBox="0 0 24 24">
+        <circle cx="12" cy="18" r="3" />
+        <circle cx="6" cy="6" r="3" />
+        <circle cx="18" cy="6" r="3" />
+        <path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9M12 12v3" />
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        <rect width="20" height="14" x="2" y="6" rx="2" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path
+          d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z" />
+        <path d="M22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <path
+          d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53" />
+        <circle cx="12" cy="8" r="6" />
+      </symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24">
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+      </symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24">
+        <path d="m12 14 4-4" />
+        <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+      <symbol id="i-message" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </symbol>
+      <symbol id="i-wand" viewBox="0 0 24 24">
+        <path
+          d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72" />
+        <path d="m14 7 3 3M5 6v4M19 14v4M10 2v2M7 8H3M21 16h-4M11 3H9" />
+      </symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24">
+        <rect width="18" height="18" x="3" y="4" rx="2" />
+        <path d="M16 2v4M8 2v4M3 10h18" />
+      </symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24">
+        <path d="M12 22v-5M9 8V2M15 8V2" />
+        <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24">
+        <rect width="18" height="11" x="3" y="11" rx="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </symbol>
+      <symbol id="i-lightbulb" viewBox="0 0 24 24">
+        <path
+          d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4" />
+      </symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24">
+        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+        <path d="M12 9v4M12 17h.01" />
+      </symbol>
+      <symbol id="i-trending" viewBox="0 0 24 24">
+        <path d="m22 7-8.5 8.5-5-5L2 17" />
+        <path d="M16 7h6v6" />
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+        <path d="M14 2v4a2 2 0 0 0 2 2h4M10 9H8M16 13H8M16 17H8" />
+      </symbol>
+      <symbol id="i-target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="brand" aria-label="Yash Maheshwari, back to top">
+        <span class="brand__mark">YM</span>
+        <span class="brand__name">Yash Maheshwari</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Work</a>
+        <a href="#ai">AI Lab</a>
+        <a href="#skills">Skills</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="kbd-btn" type="button" data-cmdk aria-label="Open command menu (Ctrl or Cmd + K)">
+          <svg class="i">
+            <use href="#i-command" />
+          </svg><span>K</span>
+        </button>
+        <a class="btn btn--primary btn--sm" href="assets/Yash_Maheshwari_Resume.pdf" download data-resume>
+          <svg class="i">
+            <use href="#i-download" />
+          </svg><span>Résumé</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
-    <!-- ====================================== Background Animation ===================================== -->
-    <div id="surface-shader"></div>
-    <!-- ====================================== Background Animation End ===================================== -->
-    <div class="site-containe">
-        <!-- ====================================== Header ===================================== -->
-        <div class="container" id="mainHeader">
-            <header>
-                <a href="index.html" class="main-header-logo">
-                    <img class="logo" src="logo-yash.png" alt="logo">
-                </a>
-                <div class="aryaBtn-toggle-main mt-0">
-                    <ul class="side-menu-ul" id="menu-list-header">
-                        <li class="menu-btn">
-                            <a href="#home">HOME</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#about">ABOUT</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#services">SERVICES</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#portfolio">My Work</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#resume">RESUME</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                    <button id="menu-toggle" class="menu-toggle-button">
-                        <span class="hamburger" id="hamburger-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </span>
-                    </button>
-                </div>
-            </header>
-        </div>
-        <!-- ====================================== Side Menu ===================================== -->
-        <div class="container">
-            <div class="row main-row">
-                <div class="col-xxl-3 col-xl-3 col-lg-4">
-                    <div class="side-menu-main">
-                        <a href="index.html" class="side-menu-two-logo">
-                            <img src="logo-yash.png" alt="logo" class="img-fluid"
-                                style="width: 200px; height: 100px;object-fit: cover;border: 2px solid var(--main-text);">
-                        </a>
-                        <div class="portfolio-girl-menu-main">
-                            <img src="yash.jpg" alt="yash-maheshwari" class="img-fluid"
-                                style="width: 200px; height: 200px;object-fit: cover; border-radius: 50%; border: 2px solid var(--main-text);">
-                        </div>
-                        <div class="list-menu">
-                            <p class="side-menu-arya">Yash Maheshwari</p>
-                            <p class="web-arya">WEB & Backend Developer</p>
-                            <div class="media-main">
-                                <a href="https://www.facebook.com/yash.maheshwari.140193" class="media-icons">
-                                    <img src="assets/images/svg/facebook.svg" alt="facebook">
-                                </a>
-                                <a href="https://www.instagram.com/yash_ajmera614/" class="media-icons">
-                                    <img src="assets/images/svg/insta.svg" alt="insta">
-                                </a>
-                                <a href="https://www.linkedin.com/in/yash-maheshwari800055/" class="media-icons">
-                                    <img src="assets/images/svg/linkdin.svg" alt="linkdin">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="list-menu menu-list-main d-xl-none">
-                            <ul class="side-menu-ul">
-                                <li>
-                                    <a href="#home">HOME<img src="assets/images/svg/home.svg" alt="home"></a>
-                                </li>
-                                <li>
-                                    <a href="#about">ABOUT ME<img src="assets/images/svg/about.svg" alt="about"></a>
-                                </li>
-                                <li>
-                                    <a href="#services">SERVICES<img src="assets/images/svg/services.svg"
-                                            alt="services"></a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">My Work<img src="assets/images/svg/portfolio.svg"
-                                            alt="portfolio"></a>
-                                </li>
-                                <li>
-                                    <a href="#resume">RESUME<img src="assets/images/svg/resume.svg" alt="resume"></a>
-                                </li>
-
-                                <li>
-                                    <a href="#contact">CONTACT<img src="assets/images/svg/contact.svg"
-                                            alt="contact"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list-menu">
-                            <p class="phone-text">PHONE:</p>
-                            <a href="tel:(+91) 8000-553597" class="phone-num">
-                                <p>(+91) 8000-553597</p>
-                            </a>
-                            <p class="phone-text">EMAIL:</p>
-                            <a href="mailto:yashajmera1203@gmail.com" class="phone-num">
-                                <p>yashajmera1203<br>@gmail.com</p>
-                            </a>
-                            <p class="phone-text">LOCATION:</p>
-                            <p class="phone-num">Ajmer, Rajasthan, India</p>
-                            <div class="Hire-Me-side-menu">
-                                <a href="assets/pdf/olivia_resume.pdf" class="aryaBtn">
-                                    Hire Me! <img class="hireMe-svg-side" src="assets/images/svg/hireMe-svg.svg"
-                                        alt="download-svg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-9 col-xl-9 col-lg-12" data-bs-spy="scroll">
-                    <!-- ====================================== Section-One ===================================== -->
-                    <section class="section-one active_menus" id="home">
-                        <div class="row section-one-row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                <!-- <p class="hi-there fade_down">Hi there! <span>👋</span></p> -->
-                                <h1 class="creative fade_down">Hi, I’m Yash Maheshwari</h1>
-                                <h2 class="visionary fade_down">I’m a passionate Software Engineer who loves turning
-                                    ideas into powerful web applications. With experience in Laravel, PHP, Node.js,
-                                    JavaScript, SQL, and more, I enjoy building websites and systems that are not only
-                                    functional but also user-friendly. <br>
-
-                                    I believe technology should make life easier, and that’s exactly what I aim for in
-                                    every project I work on. From creating smooth dashboards to developing secure APIs,
-                                    I focus on writing clean, reliable, and efficient code.</h2>
-                                <div class="download-btn">
-                                    <a href="assets/pdf/olivia_resume.pdf" class="aryaBtn">
-                                        Download CV <img src="assets/images/svg/download-svg.svg" alt="download-svg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 portfolio-girl-img-col">
-                                <div class="position-relative zoom_in">
-                                    <img src="yash.jpg" alt="yash-maheshwari" class="img-fluid portfolio-girl-img"
-                                        style="width: 300px; height: 300px;object-fit: cover; border-radius: 50%; border: 2px solid var(--main-text);">
-                                    <div class="girl-name">
-                                        <p class="ityped">I’M Yash Maheshwari</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- ====================================== Section-Two ===================================== -->
-                    <section class="section-two overflow-hidden active_menus" id="about">
-                        <div class="row">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 about-col">
-                                <h2 class="arya-stack-about fade_down"><span>I’m</span>Yash Maheshwari</h2>
-                                <p class="WebExperts fade_down">Software Engineer</p>
-                                <div class="yer-exp-box-main">
-                                    <div class="yer-exp-box counter fade_down">
-                                        <p class="degit count" data-count="03"></p>
-                                        <div>
-                                            <p>+</p>
-                                            <p>Years Of Exp.</p>
-                                        </div>
-                                    </div>
-                                    <div class="yer-exp-box counter fade_down">
-                                        <p class="degit count" data-count="50">0</p>
-                                        <div>
-                                            <p>+</p>
-                                            <p>Projects Done</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 self-taught-col">
-                                <h2 class="self-taught">Hello! <span>I’m Yash</span> who loves turning ideas into real,
-                                    working <span>web applications</span> For me, coding isn’t just about writing lines
-                                    of code — it’s about solving problems and making life easier through technology.
-                                </h2>
-                                <h2 class="visionary">Over the last there years, I’ve worked with Laravel, PHP, Node.js,
-                                    JavaScript, SQL, and other web technologies to build websites, dashboards, and APIs
-                                    that are smooth, secure, and user-friendly.
-                                </h2>
-                                <div class="about-deatils-head fade_down">
-                                    <div class="about-detail-main">
-                                        <p class="about-detail">Name</p>
-                                        <p class="about-detail-info">Yash Maheshwari</p>
-                                    </div>
-                                    <div class="about-detail-main">
-                                        <p class="about-detail">Nationality</p>
-                                        <p class="about-detail-info">Indian</p>
-                                    </div>
-                                    <div class="about-detail-main">
-                                        <p class="about-detail">Phone</p>
-                                        <p class="about-detail-info">+91 8000553597</p>
-                                    </div>
-                                    <div class="about-detail-main">
-                                        <p class="about-detail">Email</p>
-                                        <p class="about-detail-info">yashajmera1203@gmail.com</p>
-                                    </div>
-                                    <div class="about-detail-main">
-                                        <p class="about-detail">Experience</p>
-                                        <p class="about-detail-info">3+ years</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- ====================================== Section-Three ===================================== -->
-                    <section class="section-three active_menus" id="services">
-                        <h3 class="creative brand fade_down">Helping Brands Grow with Smart Websites</h3>
-                        <h3 class="visionary fade_down">I create websites and applications that don’t just look good —
-                            they work beautifully. By blending design with solid backend systems, I make sure your
-                            digital presence is both attractive and powerful.</h3>
-                        <div class="services-box fade_down" id="services-box">
-                            <div>
-                                <img class="services-icon" src="assets/images/svg/web.svg" alt="web">
-                                <p class="web-dev-text">Web Design & Development</p>
-                            </div>
-                            <p class="visionary">I build websites that are modern, fast, and responsive. Whether it’s a
-                                business site, a portfolio, or an online store, I make sure it looks professional and
-                                works smoothly on all devices.</p>
-                        </div>
-                        <div class="services-box fade_down">
-                            <div>
-                                <img class="services-icon" src="assets/images/svg/UI-design.svg" alt="UI-design">
-                                <p class="web-dev-text">UI Design & Experience</p>
-                            </div>
-                            <p class="visionary">Design is all about how people feel when they use your website. I focus
-                                on creating clean, simple, and user-friendly layouts so visitors enjoy every click and
-                                find what they need without stress.</p>
-                        </div>
-                        <div class="services-box fade_down">
-                            <div>
-                                <img class="services-icon" src="assets/images/svg/digital.svg" alt="web">
-                                <p class="web-dev-text">Backend Development</p>
-                            </div>
-                            <p class="visionary">A strong website needs a strong backbone. I develop secure, reliable,
-                                and scalable backends that keep everything running smoothly — from handling data to
-                                managing users and powering custom features.</p>
-                        </div>
-                    </section>
-                    <!-- ====================================== Section-Four ===================================== -->
-                    <section class="section-four active_menus" id="portfolio">
-                        <h2 class="creative fade_down">My Projects</h2>
-                        <h2 class="visionary fade_down">Here are some of the projects I have worked on.</h2>
-                        <div class="services-box fade_down">
-                            <div>
-                                <p class="web-dev-text">Online Course Management Platform</p>
-                            </div>
-                            <p class="visionary">I built an online course management website where students can submit
-                                inquiries (directly captured through Zoho Leads). Trainers can create and manage their
-                                own courses, while institutes can publish multiple courses as well.</p>
-                            <ul class="text-white ">
-                                <li><span class="text-white fs-6 fw-bold border-bottom">Zoho Leads Integration</span> -:
-                                    Automatically captures student inquiries into Zoho CRM.</li>
-                                <li><span class="text-white fs-6 fw-bold border-bottom">Role Management</span> -:
-                                    Complete role-based access system for Super Admin, Admin, Trainers, Institutes, and
-                                    Students.</li>
-                                <li><span class="text-white fs-6 fw-bold border-bottom">Course Management </span> -:
-                                    Trainers and institutes can easily add, update, and manage their courses.</li>
-                                <li><span class="text-white fs-6 fw-bold border-bottom">Custom Dashboards </span> -:
-                                    Personalized dashboards with relevant features for each user role.</li>
-                                <li><span class="text-white fs-6 fw-bold border-bottom">User-Friendly Design</span> -:
-                                    Simple and intuitive interface for a smooth experience.</li>
-                            </ul>
-                        </div>
-
-                        <div class="services-box fade_down">
-                            <div>
-                                <p class="web-dev-text">Pandit Online Course & Website Management Platform</p>
-                            </div>
-
-                            <!-- Short human-friendly description -->
-                            <p class="visionary">
-                                I built a platform for Pandit Ji (spiritual trainers/astrologers) to create their own
-                                personalized website. They can add courses, list products, set pricing, and manage
-                                inquiries — all in one place. Leads from the website are automatically captured in Zoho
-                                CRM.
-                            </p>
-
-                            <ul class="text-white">
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Personal Website Creation</span>
-                                    -: Create and customize a dedicated website to showcase services and offerings.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Course & Product
-                                        Management</span> -: Add, update, and manage courses, spiritual services, and
-                                    products.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Flexible Pricing</span> -: Set
-                                    and manage pricing for courses and products.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Zoho Leads Integration</span> -:
-                                    Automatically captures website inquiries into Zoho CRM as leads.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Role Management</span> -:
-                                    Role-based access for Super Admin, Admin, Trainers (Pandit Ji), Institutes, and
-                                    Students.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Custom Dashboards</span> -:
-                                    Personalized dashboards with relevant features for each user role.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">User-Friendly Design</span> -:
-                                    Simple and intuitive interface for a smooth experience.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="services-box fade_down">
-                            <div>
-                                <p class="web-dev-text">E-Commerce Platform with Bulk Import & Zoho Integration</p>
-                            </div>
-
-                            <!-- Short human-friendly description -->
-                            <p class="visionary">
-                                I developed a full-featured e-commerce platform with advanced tools for product and
-                                vendor management.
-                                The system supports bulk product imports via Excel, where even product images can be
-                                uploaded just by
-                                mentioning file names in the sheet. Inquiries are directly connected to Zoho CRM for
-                                better lead
-                                management. I also added deals management and multi-vendor support to make the platform
-                                more scalable.
-                            </p>
-
-                            <ul class="text-white">
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Bulk Import with Images</span>
-                                    -: Import products in
-                                    bulk via Excel; images are automatically displayed using file names.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Zoho Integration</span> -:
-                                    Seamless connectivity with
-                                    Zoho CRM for inquiries and lead management.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Deals Module</span> -: Create
-                                    and manage discounts,
-                                    offers, and special deals.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Multi-Vendor Support</span> -:
-                                    Multiple vendors can
-                                    register, upload products, and manage their stores.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">Product & Inventory
-                                        Management</span> -: Tools to add,
-                                    update, and track products and stock.
-                                </li>
-                                <li>
-                                    <span class="text-white fs-6 fw-bold border-bottom">User-Friendly Interface</span>
-                                    -: Clean and intuitive
-                                    design for admins, vendors, and customers.
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </section>
-
-                    <!-- ====================================== Section-Six ===================================== -->
-                    <section class="section-six active_menus" id="resume">
-                        <div class="row resume-sec-row">
-                            <div class="col-xxl-6 col-lg-6">
-                                <h2 class="creative brand fade_up">Education</h2>
-                                <div class="education fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">(MCA) Master of Computer Applications</p>
-                                        <p class="cursus university">JAN University / 2023 - Pursuing</p>
-                                        <p class="cursus">Currently pursuing my MCA, where I’m deepening my knowledge of
-                                            software development, advanced programming, and modern web technologies.
-                                            This program is helping me strengthen both my theoretical base and practical
-                                            problem-solving skills.</p>
-                                    </div>
-                                </div>
-                                <div class="education position-relative fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">(BCA) Bachelor of Computer Applications</p>
-                                        <p class="cursus university">MDSU (Maharshi Dayanand Saraswati University) /
-                                            2019 - 2021</p>
-                                        <p class="cursus">Completed my BCA with a strong foundation in programming,
-                                            databases, and computer science fundamentals. This is where my interest in
-                                            coding turned into a real passion for building websites and applications.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="education position-relative fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">TRAINING (Web Development)</p>
-                                        <p class="cursus university">Pepcoding Education (ODC) private LTD. (02/2022 -
-                                            08/2022)</p>
-                                        <p class="cursus">Completed an intensive Web Development training program, where
-                                            I gained hands-on experience in frontend (HTML, CSS, JavaScript) and backend
-                                            (Node.js, SQL, PHP, Laravel). This training gave me the confidence to start
-                                            working on real-world projects.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-6 col-lg-6">
-                                <h2 class="creative brand fade_up">Experience.</h2>
-
-                                <!-- Hub2Technologies -->
-                                <div class="education fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">SOFTWARE ENGINEER</p>
-                                        <p class="cursus university">Hub2Technologies / Nov 2024 - Present</p>
-                                        <p class="cursus">
-                                            Developing <strong>e-commerce platforms</strong> and <strong>live match
-                                                betting games</strong>.
-                                            Integrated secure <strong>payment gateways</strong>, <strong>Google
-                                                reCAPTCHA</strong>, and
-                                            implemented <strong>multi-language support</strong>. Managing backend
-                                            operations using
-                                            Laravel, PHP, Node.js, and AJAX.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- Fyntune Solution -->
-                                <div class="education position-relative fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">SOFTWARE ENGINEER</p>
-                                        <p class="cursus university">Fyntune Solution Pvt. Ltd. / Nov 2022 - Jul 2024
-                                        </p>
-                                        <p class="cursus">
-                                            Built and maintained <strong>insurance modules</strong> like Claims, Bulk
-                                            Import,
-                                            Policy Renewal, Endorsements, and Cancellations. Created secure backends
-                                            with
-                                            <strong>Laravel framework</strong> and worked extensively on <strong>REST
-                                                APIs</strong>
-                                            for seamless integration.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- Concentics Solution -->
-                                <div class="education position-relative fade_up">
-                                    <div class="side_circle_ring">
-                                        <div class="small_yellow_border">
-                                            <div class="small_yellow_circle"></div>
-                                        </div>
-                                    </div>
-                                    <div class="small_yellow_border_main">
-                                        <p class="bachelor">JUNIOR DEVELOPER (PHP & JavaScript)</p>
-                                        <p class="cursus university">Concentics Solution / Jul 2022 - Sep 2022</p>
-                                        <p class="cursus">
-                                            Designed and developed a website for <strong>The Luxe Pushkar Hotel</strong>
-                                            along with <strong>UI/UX</strong> improvements. Collaborated on projects
-                                            like
-                                            <strong>Employee Management System</strong> and <strong>Exam
-                                                Portal</strong>,
-                                            focusing on both frontend and backend development.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="coding-skill-section">
-                            <h2 class="creative brand pb-0 fade_down">Top <span>Skills</span></h2>
-                            <div id="progress">
-                                <div class="progress-item fade_down" data-skill="Laravel" data-value="60"></div>
-                                <div class="progress-item fade_down" data-skill="PHP" data-value="50"></div>
-                                <div class="progress-item fade_down" data-skill="Javascript" data-value="50"></div>
-                                <div class="progress-item fade_down" data-skill="HTML" data-value="70"></div>
-                                <div class="progress-item fade_down" data-skill="CSS & Bootstrap" data-value="50"></div>
-                            </div>
-                        </div>
-                        <div class="coding-skill-section">
-                            <h2 class="creative brand pb-0 fade_down">Design <span>Skills</span></h2>
-                            <div class="design-skill-sub-section">
-                                <div class="design-skills-img-main flip_up show">
-                                    <img src="assets/images/home-images/figma-img.png" alt="figma-img">
-                                    <div class="skill-counter-main">
-                                        <p>94%</p>
-                                        <p>CSS, BOOTSTRAP</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!-- ====================================== Section Nine ===================================== -->
-                    <section class="section-nine active_menus" id="contact">
-                        <h3 class="creative brand fade_down">Let’s Talk <span> With Us</span></h3>
-                        <h3 class="visionary fade_down">Have a project in mind or just want to discuss an idea? I’m
-                            always open to collaborations, freelance work, or full-time opportunities. Reach out through
-                            a call, email, or just drop a message — I’d be happy to connect!</h3>
-                        <div class="contact-box-grid">
-                            <div class="contact-sec-box zoom_in">
-                                <p class="call-us-contact">
-                                    <img class="call-us-contact-img" src="assets/images/svg/call.svg" alt="call"> Call
-                                    Us
-                                </p>
-                                <!-- <p class="day-time">any time</p> -->
-                                <a href="tel:(+1)5623894336" class="call-num">
-                                    <p>(+91) 8000-553597</p>
-                                </a>
-                            </div>
-                            <div class="contact-sec-box zoom_in">
-                                <p class="call-us-contact">
-                                    <img class="call-us-contact-img" src="assets/images/svg/email.svg" alt="call"> Chat
-                                    to Us
-                                </p>
-                                <!-- <p class="day-time">Our friendly team is here to help.</p> -->
-                                <a href="mailto:hello@aryastark.com" class="call-num">
-                                    <p>yashajmera1203@gmail.com</p>
-                                </a>
-                            </div>
-                            <div class="contact-sec-box zoom_in">
-                                <p class="call-us-contact">
-                                    <img class="call-us-contact-img" src="assets/images/svg/loaction.svg"
-                                        alt="loaction">Location
-                                </p>
-                                <!-- <p class="day-time">Come say hello at our office HQ.</p> -->
-                                <p class="call-num">Ajmer, Rajasthan India Pincode - 305001</p>
-                            </div>
-                        </div>
-                        <h3 class="creative brand got">Got Ideas? <span> We've got the skills</span></h3>
-                        <h3 class="visionary"> Whether it’s <strong>web development, design, or custom
-                                solutions</strong>, I’ve got the skills to turn your vision into reality. Let’s work
-                            together and create something amazing.</h3>
-                        <form>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">NAME*</p>
-                                    <input type="text" placeholder="Your Full Name" name="YourName" autocomplete="off">
-                                </div>
-                                <div class="labal-input">
-                                    <p class="labal">EMAIL*</p>
-                                    <input type="text" placeholder="Your Email Address" name="EmailID"
-                                        autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">SUBJECT*</p>
-                                    <input type="text" placeholder="Your Subject" name="subject" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="input-main">
-                                <div class="labal-input">
-                                    <p class="labal">MESSAGE*</p>
-                                    <input type="text" placeholder="Write Your Message..." name="message"
-                                        autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="download-btn">
-                                <a href="#" class="aryaBtn">
-                                    Send Message <img src="assets/images/svg/right-arrow.svg" alt="right-arrow">
-                                </a>
-                            </div>
-                        </form>
-                    </section>
-                    <!-- ====================================== Footer ===================================== -->
-                    <footer>
-                        <div class="rights-reserved">
-                            <h2>© 2025 - All rights reserved by
-                                <a href="#" target="_blank">Yash Maheshwari.</a>
-                            </h2>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-        </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Work</a>
+      <a href="#ai">AI Lab</a>
+      <a href="#skills">Skills</a>
+      <a href="#github">GitHub</a>
+      <a href="#contact">Contact</a>
     </div>
-    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  </header>
 
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <a href="#contact" class="pill pill--status reveal">
+            <span class="dot dot--live"></span>
+            Open to Senior SWE &amp; AI Engineer roles · Remote / Hybrid
+            <svg class="i">
+              <use href="#i-arrow-right" />
+            </svg>
+          </a>
+          <h1 class="hero__title reveal" id="hero-title">
+            <span class="hero__name">Yash Maheshwari</span>
+            <span class="hero__line">Backends that <em class="serif grad-text">scale.</em></span>
+            <span class="hero__line">AI that <em class="serif grad-text">ships.</em></span>
+          </h1>
+          <p class="hero__role reveal">
+            <span class="muted">I'm a</span>
+            <span class="typed-wrap" aria-hidden="true"><span class="typed" id="typed">Senior Software
+                Engineer</span><span class="caret"></span></span>
+            <span class="sr-only">Senior Software Engineer, Full Stack Developer, Backend Architect, AI Engineer,
+              Automation Expert, Prompt Engineer and Web Scraping Specialist</span>
+          </p>
+          <p class="hero__sub reveal">
+            3.5+ years architecting high-performance <strong>Laravel, Node.js &amp; Python</strong> platforms, and
+            building <strong>LLM agents, RAG pipelines</strong> and <strong>web-scraping engines</strong> that turn
+            hours of manual work into reliable.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#projects" class="btn btn--primary btn--lg magnetic">View my work <svg class="i">
+                <use href="#i-arrow-right" />
+              </svg></a>
+            <a href="assets/Yash_Maheshwari_Resume.pdf" download class="btn btn--glass btn--lg magnetic"
+              data-resume><svg class="i">
+                <use href="#i-download" />
+              </svg> Download résumé</a>
+          </div>
+          <div class="hero__foot reveal">
+            <ul class="hero__meta" aria-label="Highlights">
+              <li><svg class="i">
+                  <use href="#i-briefcase" />
+                </svg>InsurTech · E-commerce · EdTech · Gaming</li>
+              <li><svg class="i">
+                  <use href="#i-map-pin" />
+                </svg>Ajmer, India · IST (UTC+5:30)</li>
+            </ul>
+            <div class="hero__social">
+              <a href="https://github.com/yash2208-get" target="_blank" rel="noopener" aria-label="GitHub profile"><svg
+                  class="i">
+                  <use href="#i-github" />
+                </svg></a>
+              <a href="https://www.linkedin.com/in/yash-maheshwari800055" target="_blank" rel="noopener"
+                aria-label="LinkedIn profile"><svg class="i">
+                  <use href="#i-linkedin" />
+                </svg></a>
+              <a href="mailto:yashajmera1203@gmail.com" aria-label="Send email"><svg class="i">
+                  <use href="#i-mail" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
 
-    <a href="https://wa.me/918000553597" target="_blank" class="whatsapp-float">
-        <i class="bi bi-whatsapp"></i>
-    </a>
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="console tilt" data-tilt="10" id="console">
+            <div class="console__bar"><span></span><span></span><span></span>
+              <p class="console__title">lead_agent.py · LangChain</p>
+            </div>
+            <pre
+              class="console__code"><code><span class="ln"><span class="tok-k">from</span> langgraph.graph <span class="tok-k">import</span> StateGraph</span><span class="ln"><span class="tok-k">from</span> tools <span class="tok-k">import</span> scrape_site, vector_search, crm</span><span class="ln"> </span><span class="ln">graph = <span class="tok-f">StateGraph</span>(LeadState)</span><span class="ln">graph.<span class="tok-f">add_node</span>(<span class="tok-s">"research"</span>, scrape_site)   <span class="tok-c"># Playwright</span></span><span class="ln">graph.<span class="tok-f">add_node</span>(<span class="tok-s">"retrieve"</span>, vector_search) <span class="tok-c"># RAG</span></span><span class="ln">graph.<span class="tok-f">add_node</span>(<span class="tok-s">"qualify"</span>, llm.<span class="tok-f">with_structured_output</span>(Score))</span><span class="ln">graph.<span class="tok-f">add_node</span>(<span class="tok-s">"sync"</span>, crm.upsert)        <span class="tok-c"># MCP tool</span></span><span class="ln">graph.<span class="tok-f">add_edge</span>(<span class="tok-s">"research"</span>, <span class="tok-s">"retrieve"</span>)</span><span class="ln">graph.<span class="tok-f">add_conditional_edges</span>(<span class="tok-s">"qualify"</span>, route)</span><span class="ln">agent = graph.<span class="tok-f">compile</span>(checkpointer=<span class="tok-v">memory</span>)</span></code></pre>
+            <div class="console__log">
+              <p class="log-line"><b>✓</b> research · 1,284 pages crawled in 41s</p>
+              <p class="log-line"><b>✓</b> retrieve · top-k 8 · hit-rate 0.93</p>
+              <p class="log-line"><b>✓</b> qualify · 42 leads scored · schema valid</p>
+              <p class="log-line"><b>✓</b> sync · 42 records → CRM · p95 412ms<span class="caret caret--sm"></span></p>
+            </div>
+          </div>
+          <span class="float-chip fc1"><svg class="i">
+              <use href="#i-server" />
+            </svg>Laravel</span>
+          <span class="float-chip fc2"><svg class="i">
+              <use href="#i-zap" />
+            </svg>FastAPI</span>
+          <span class="float-chip fc3"><svg class="i">
+              <use href="#i-bot" />
+            </svg>LangChain</span>
+          <span class="float-chip fc5"><svg class="i">
+              <use href="#i-sparkles" />
+            </svg>OpenAI</span>
+          <span class="float-chip fc6"><svg class="i">
+              <use href="#i-database" />
+            </svg>pgvector</span>
+          <span class="orb orb--1"></span><span class="orb orb--2"></span>
+        </div>
+      </div>
 
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            left: 20px;
-            /* left side */
-            bottom: 20px;
-            /* adjust vertical position */
-            background-color: #25d366;
-            color: #fff;
-            font-size: 28px;
-            padding: 12px 16px;
-            border-radius: 50%;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
+      <div class="marquee" aria-label="Technologies I work with">
+        <div class="marquee__track">
+          <span class="marquee__item">Laravel</span><span class="marquee__item">PHP 8</span><span
+            class="marquee__item">Node.js</span><span class="marquee__item">Python</span><span
+            class="marquee__item">FastAPI</span><span class="marquee__item">LangChain</span><span
+            class="marquee__item">OpenAI</span><span class="marquee__item">Ollama</span><span
+            class="marquee__item">MCP</span><span class="marquee__item">Playwright</span><span
+            class="marquee__item">Selenium</span><span class="marquee__item">BeautifulSoup</span><span
+            class="marquee__item">MySQL</span><span class="marquee__item">PostgreSQL</span><span
+            class="marquee__item">MongoDB</span><span class="marquee__item">Redis</span><span class="marquee__item">Zoho
+            CRM</span>
+        </div>
+      </div>
+    </section>
 
-        .whatsapp-float:hover {
-            background-color: #20b358;
-            color: #fff;
-        }
-    </style>
-    <!-- ====================================== Bottom To Top Button ===================================== -->
-    <button class="bottom-top-button"><img src="assets/images/svg/arrow-up.svg" alt="arrow-up"></button>
-    <!-- ====================================== Bottom To Top Button End ===================================== -->
-    <script src="assets/javascript/jquery.min.js"></script>
-    <script src="assets/javascript/gsap.js"></script>
-    <script src="assets/javascript/bootstrap.min.js"></script>
-    <script src="assets/javascript/magnific-popup.min.js"></script>
-    <script src="assets/javascript/fancybox.min.js"></script>
-    <script src="assets/javascript/typing.js"></script>
-    <script src="assets/javascript/smooth-scroll.js"></script>
-    <script src="assets/javascript/slick.min.js"></script>
-    <script src="assets/javascript/bg-animation/fss.min.js"></script>
-    <script src="assets/javascript/bg-animation/circle.js"></script>
-    <script src="assets/javascript/script.js"></script>
+    <!-- ============ STATS ============ -->
+    <section class="stats" aria-label="Career statistics">
+      <div class="container stats__grid">
+        <div class="stat glass reveal">
+          <p class="stat__num"><span data-count="3.5" data-decimals="1">3.5</span><span class="plus">+</span></p>
+          <p class="stat__label">Years shipping production software</p>
+        </div>
+        <div class="stat glass reveal">
+          <p class="stat__num"><span data-count="50">50</span><span class="plus">+</span></p>
+          <p class="stat__label">Projects &amp; modules delivered</p>
+        </div>
+        <div class="stat glass reveal">
+          <p class="stat__num"><span data-count="80">80</span><span class="plus">%</span></p>
+          <p class="stat__label">Manual work automated (peak)</p>
+        </div>
+        <div class="stat glass reveal">
+          <p class="stat__num"><span data-count="40">40</span><span class="plus">%</span></p>
+          <p class="stat__label">Faster APIs after optimization</p>
+        </div>
+        <div class="stat glass reveal">
+          <p class="stat__num"><span data-count="5">5</span></p>
+          <p class="stat__label">Industries, InsurTech to real-time gaming</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__media reveal">
+          <div class="portrait tilt" data-tilt="8">
+            <span class="portrait__ring" aria-hidden="true"></span>
+            <img src="yash.jpg" alt="Portrait of Yash Maheshwari, Senior Software Engineer" width="440" height="550"
+              loading="lazy" decoding="async" data-fallback="yash.jpg">
+            <span class="portrait__mono" aria-hidden="true">YM</span>
+          </div>
+          <div class="badge-float bf1 glass"><svg class="i">
+              <use href="#i-shield" />
+            </svg>
+            <div><b>InsurTech</b><small>Regulated-domain experience</small></div>
+          </div>
+          <div class="badge-float bf2 glass"><svg class="i">
+              <use href="#i-bot" />
+            </svg>
+            <div><b>AI Agents</b><small>LangGraph · MCP · RAG</small></div>
+          </div>
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow reveal">About me</p>
+          <h2 class="h2 reveal" id="about-title">Engineer by craft. <em class="serif grad-text">Automator</em> by
+            instinct.</h2>
+          <p class="lead reveal">I'm a Senior Software Engineer with 3.5+ years of experience building the systems
+            behind real businesses: insurance platforms that process tens of thousands of policies, multi-vendor
+            marketplaces, EdTech SaaS, and real-time gaming products used by thousands of concurrent users.</p>
+          <p class="body reveal">My core is <strong>backend architecture</strong>: clean APIs, solid data models,
+            queues, caching and integrations that just work. Over the last year I've doubled down on <strong>AI
+              engineering</strong>, building RAG copilots, LangGraph agents, MCP tool servers and scraping pipelines
+            that replace hours of manual work with reliable automation.</p>
+          <p class="body reveal">I care about measurable outcomes: faster endpoints, fewer manual steps, cleaner code
+            and products that teams enjoy maintaining. I'm looking to bring that ownership to a product-focused team
+            building at scale.</p>
+          <dl class="facts reveal">
+            <div>
+              <dt>Based in</dt>
+              <dd>Ajmer, India · Remote-ready</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>3.5+ years · 4 companies</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Backend · AI · Automation</dd>
+            </div>
+            <div>
+              <dt>Open to</dt>
+              <dd>Senior SWE · Backend · AI Engineer</dd>
+            </div>
+          </dl>
+          <div class="about__cta reveal">
+            <a href="#contact" class="btn btn--primary magnetic">Let's talk <svg class="i">
+                <use href="#i-arrow-right" />
+              </svg></a>
+            <a href="https://github.com/yash2208-get" target="_blank" rel="noopener" class="btn btn--ghost"><svg
+                class="i">
+                <use href="#i-github" />
+              </svg> github.com/yash2208-get</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE (7 BRAND PILLARS) ============ -->
+    <section class="section" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Expertise</p>
+          <h2 class="h2 reveal" id="expertise-title">Seven hats. One standard: <em
+              class="serif grad-text">production-grade.</em></h2>
+          <p class="lead reveal">From system design to prompt design, I own the whole path from idea to reliable
+            software.</p>
+        </header>
+        <div class="bento">
+          <article class="bento__card glass spot gborder gborder--spin is-wide reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-bot" />
+              </svg></div>
+            <h3 class="bento__title">AI Engineer</h3>
+            <p class="bento__text">Production LLM applications: RAG copilots with citations, stateful LangGraph agents
+              and MCP tool servers, shipped with evals, guardrails and cost controls.</p>
+            <ul class="tags">
+              <li>LangGraph</li>
+              <li>OpenAI</li>
+              <li>Ollama</li>
+              <li>RAG</li>
+            </ul>
+            <svg class="bento__viz" viewBox="0 0 220 120" aria-hidden="true">
+              <line x1="30" y1="60" x2="95" y2="25" />
+              <line x1="30" y1="60" x2="95" y2="95" />
+              <line x1="95" y1="25" x2="165" y2="60" />
+              <line x1="95" y1="95" x2="165" y2="60" />
+              <line x1="165" y1="60" x2="205" y2="60" />
+              <circle cx="30" cy="60" r="9" />
+              <circle cx="95" cy="25" r="9" />
+              <circle cx="95" cy="95" r="9" />
+              <circle class="hot" cx="165" cy="60" r="11" />
+              <circle cx="205" cy="60" r="6" />
+            </svg>
+          </article>
+          <article class="bento__card glass spot reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-award" />
+              </svg></div>
+            <h3 class="bento__title">Software Engineer</h3>
+            <p class="bento__text">Ownership from design doc to production. Code reviews, standards and mentoring that
+              raise the bar for the whole team.</p>
+            <ul class="tags">
+              <li>SDLC</li>
+              <li>Code Review</li>
+              <li>Mentoring</li>
+            </ul>
+          </article>
+          <article class="bento__card glass spot reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-server" />
+              </svg></div>
+            <h3 class="bento__title">Backend Architect</h3>
+            <p class="bento__text">Multi-tenant SaaS, RBAC, queues, caching and integration layers designed to scale
+              without rewrites.</p>
+            <ul class="tags">
+              <li>System Design</li>
+              <li>REST</li>
+            </ul>
+          </article>
+          <article class="bento__card glass spot reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-layers" />
+              </svg></div>
+            <h3 class="bento__title">Full Stack Developer</h3>
+            <p class="bento__text">Laravel, Node.js and FastAPI backend-to-end features with clean APIs and fast,
+              accessible
+              interfaces.</p>
+            <ul class="tags">
+              <li>Laravel</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+          <article class="bento__card glass spot reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-workflow" />
+              </svg></div>
+            <h3 class="bento__title">Automation Expert</h3>
+            <p class="bento__text">Bulk-import engines, CRM sync and scheduled workflows that remove up to 80% of manual
+              work.</p>
+            <ul class="tags">
+              <li>Zoho CRM</li>
+            </ul>
+          </article>
+          <article class="bento__card glass spot reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-wand" />
+              </svg></div>
+            <h3 class="bento__title">Prompt Engineer</h3>
+            <p class="bento__text">Structured outputs, tool calling, few-shot design and regression evals that make LLMs
+              predictable.</p>
+            <ul class="tags">
+              <li>Function Calling</li>
+              <li>Evals</li>
+              <li>JSON Schema</li>
+            </ul>
+          </article>
+          <article class="bento__card glass spot is-wide reveal">
+            <div class="bento__icon"><svg class="i">
+                <use href="#i-scan" />
+              </svg></div>
+            <h3 class="bento__title">Web Scraping Specialist</h3>
+            <p class="bento__text">Resilient Playwright, Selenium and BeautifulSoup pipelines with proxy rotation,
+              retries, scheduling and LLM-based extraction that survives layout changes, while respecting robots.txt and
+              rate limits.</p>
+            <ul class="tags">
+              <li>Playwright</li>
+              <li>Selenium</li>
+              <li>BeautifulSoup</li>
+              <li>Proxies</li>
+              <li>ETL</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Experience</p>
+          <h2 class="h2 reveal" id="exp-title">Four companies. One habit: <em class="serif grad-text">measurable
+              impact.</em></h2>
+          <p class="lead reveal">From a junior PHP developer to owning business-critical platforms across InsurTech,
+            gaming and SaaS.</p>
+        </header>
+        <ol class="timeline" id="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card glass">
+              <header class="tl-head">
+                <div>
+                  <h3 class="tl-role">Software Engineer</h3>
+                  <p class="tl-company">D2i Technology <span>· Full-stack product engineering</span></p>
+                </div>
+                <p class="tl-date"><svg class="i">
+                    <use href="#i-calendar" />
+                  </svg>Nov 2025 — June 2026</p>
+              </header>
+              <ul class="tl-points">
+                <li>Own end-to-end delivery of <b>5+ concurrent client applications</b>: schema design, API contracts,
+                  code review and production releases.</li>
+                <li>Cut average API response time by <b>40%</b> by eliminating N+1 queries, adding composite indexes and
+                  Redis caching.</li>
+                <li>Shipped <b>25+ REST APIs</b> and integrations that automate client workflows, saving <b>20+ hours
+                    per week</b>.</li>
+                <li>Raised React Lighthouse scores from <b>~60 to 90+</b> with code splitting, lazy loading and
+                  memoization.</li>
+              </ul>
+              <div class="tl-metrics"><span><b>40%</b>faster APIs</span><span><b>25+</b>APIs
+                  shipped</span><span><b>~30%</b>fewer defects</span></div>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>Node.js</li>
+                <li>React.js</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card glass">
+              <header class="tl-head">
+                <div>
+                  <h3 class="tl-role">Software Engineer</h3>
+                  <p class="tl-company">Hub2Technologies <span>· Real-time gaming &amp; e-commerce</span></p>
+                </div>
+                <p class="tl-date"><svg class="i">
+                    <use href="#i-calendar" />
+                  </svg>Nov 2024 — Aug 2025</p>
+              </header>
+              <ul class="tl-points">
+                <li>Engineered a <b>real-time live-match platform</b> on Laravel + Node.js WebSockets, streaming
+                  sub-second updates to thousands of concurrent users.</li>
+                <li>Integrated payment gateways with signed webhooks, idempotency and reconciliation: <b>99.9%
+                    settlement accuracy</b>.</li>
+                <li>Cut bot sign-ups and spam by <b>~90%</b> with reCAPTCHA v3, rate limiting and server-side
+                  validation.</li>
+                <li>Launched i18n in <b>5+ languages</b>, opening new regional markets.</li>
+              </ul>
+              <div class="tl-metrics"><span><b>&lt;1s</b>live updates</span><span><b>99.9%</b>settlement
+                  accuracy</span><span><b>5+</b>languages</span></div>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>Node.js</li>
+                <li>Socket.IO</li>
+                <li>Payments</li>
+                <li>reCAPTCHA v3</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card glass">
+              <header class="tl-head">
+                <div>
+                  <h3 class="tl-role">Software Engineer</h3>
+                  <p class="tl-company">Fyntune Solution Pvt. Ltd. <span>· InsurTech, B2B insurance distribution</span>
+                  </p>
+                </div>
+                <p class="tl-date"><svg class="i">
+                    <use href="#i-calendar" />
+                  </svg>Nov 2022 — Jul 2024</p>
+              </header>
+              <ul class="tl-points">
+                <li>Built policy-lifecycle modules (<b>Claim, Renewal, Endorsement, Cancellation</b>) used by
+                  brokers and insurers.</li>
+                <li>Architected a queue-driven bulk-import engine processing <b>50,000+ policy records per batch</b>;
+                  onboarding dropped from days to under an hour.</li>
+                <li>Designed secure partner REST APIs with token auth, validation and <b>audit logging</b> for a
+                  regulated domain.</li>
+                <li>Reduced report generation time by <b>60%</b> via indexing and query refactoring; mentored 2 junior
+                  developers.</li>
+              </ul>
+              <div class="tl-metrics"><span><b>50K+</b>rows per batch</span><span><b>60%</b>faster
+                  reports</span><span><b>~70%</b>less manual follow-up</span></div>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Redis Queues</li>
+                <li>Laravel Excel</li>
+                <li>REST APIs</li>
+              </ul>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card glass">
+              <header class="tl-head">
+                <div>
+                  <h3 class="tl-role">Junior Developer (PHP &amp; JavaScript)</h3>
+                  <p class="tl-company">Concentics Solution <span>· Web development</span></p>
+                </div>
+                <p class="tl-date"><svg class="i">
+                    <use href="#i-calendar" />
+                  </svg>Jul 2022 — Sep 2022</p>
+              </header>
+              <ul class="tl-points">
+                <li>Delivered a responsive, SEO-optimized website for <b>The Luxe Pushkar Hotel</b>, modernizing mobile
+                  UX to drive direct booking inquiries.</li>
+                <li>Built features for an <b>Employee Management System</b> and an <b>Online Exam Portal</b> (timed
+                  tests, auto-grading, results).</li>
+              </ul>
+              <ul class="chips">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Selected work</p>
+          <h2 class="h2 reveal" id="projects-title">Platforms that run <em class="serif grad-text">real businesses.</em>
+          </h2>
+          <p class="lead reveal">Client work is under NDA, so these case studies focus on architecture, decisions and
+            outcomes. Full walkthroughs are available in interviews.</p>
+        </header>
+        <div class="projects-grid" id="projects-grid" data-type="fullstack"></div>
+      </div>
+    </section>
+
+    <!-- ============ AI LAB ============ -->
+    <section class="section section--ai" id="ai" aria-labelledby="ai-title">
+      <div class="ai-glow" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow reveal">AI Lab</p>
+          <h2 class="h2 reveal" id="ai-title">From prompt to <em class="serif grad-text">production.</em></h2>
+          <p class="lead reveal">I design LLM systems the way I design backends: typed, observable, evaluated and
+            cost-aware. Hover the pipeline to see how each stage is built.</p>
+        </header>
+
+        <div class="pipeline glass gborder reveal" id="pipeline">
+          <div class="pipeline__track">
+            <button class="pnode" type="button"
+              data-desc="<b>Input</b>: requests arrive from users, CRM webhooks or schedulers. I validate and normalize them with Pydantic models in FastAPI before anything touches an LLM."><svg
+                class="i">
+                <use href="#i-message" />
+              </svg><span>Input</span><small>User · Webhook · Cron</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>Planner · LangGraph</b>: a stateful graph decides the next step, retries failed branches and keeps typed state, so agents are debuggable instead of magical."><svg
+                class="i">
+                <use href="#i-workflow" />
+              </svg><span>Planner</span><small>LangGraph</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>Tools · MCP &amp; Playwright</b>: agents act through typed tools (headless browsing, scraping, CRM and database access) exposed via Model Context Protocol, with allow-lists and audit logs."><svg
+                class="i">
+                <use href="#i-plug" />
+              </svg><span>Tools</span><small>MCP · Playwright</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>Retrieval · Vector DB</b>: hybrid search (BM25 + embeddings) over ChromaDB / pgvector with metadata filters and re-ranking keeps answers grounded in real sources."><svg
+                class="i">
+                <use href="#i-database" />
+              </svg><span>Retrieval</span><small>RAG · Vector DB</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>LLM · OpenAI &amp; Ollama</b>: GPT-class models for quality, and local Llama or Mistral via Ollama for privacy and cost. Structured outputs and function calling, never fragile free-text parsing."><svg
+                class="i">
+                <use href="#i-sparkles" />
+              </svg><span>LLM</span><small>OpenAI · Ollama</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>Guardrails &amp; Evals</b>: JSON-schema validation, citation checks, PII redaction and an eval suite that runs on every prompt change, like unit tests for AI."><svg
+                class="i">
+                <use href="#i-shield" />
+              </svg><span>Guardrails</span><small>Evals · Schema</small></button>
+            <span class="pwire" aria-hidden="true"></span>
+            <button class="pnode" type="button"
+              data-desc="<b>Output</b>: results land where work happens (REST APIs, CRM records, Slack or email alerts, MongoDB), with traces for cost, latency and quality."><svg
+                class="i">
+                <use href="#i-rocket" />
+              </svg><span>Output</span><small>API · CRM · Alerts</small></button>
+          </div>
+          <p class="pipeline__desc" id="pipeline-desc" aria-live="polite"><b>Hover or tap a stage</b> to see how I build
+            it.</p>
+        </div>
+
+        <div class="ai-caps">
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-database" />
+              </svg>RAG Systems</h3>
+            <p>Chunking strategies, hybrid retrieval, re-ranking and citation-grounded answers over PDFs, policies and
+              knowledge bases.</p>
+          </article>
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-bot" />
+              </svg>AI Agents &amp; LangGraph</h3>
+            <p>Stateful multi-step agents with tool calling, memory, retries and human-in-the-loop approvals.</p>
+          </article>
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-plug" />
+              </svg>MCP Tool Servers</h3>
+            <p>Model Context Protocol servers that give AI assistants safe, typed, audited access to your systems.</p>
+          </article>
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-wand" />
+              </svg>Prompt Engineering &amp; Evals</h3>
+            <p>System prompts, few-shot design, structured outputs and regression evals that make LLMs predictable.</p>
+          </article>
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-scan" />
+              </svg>Web Scraping &amp; Extraction</h3>
+            <p>Playwright, Selenium and BeautifulSoup pipelines with proxy rotation and LLM-based schema extraction.</p>
+          </article>
+          <article class="cap glass spot reveal">
+            <h3><svg class="i">
+                <use href="#i-lock" />
+              </svg>Local &amp; Private LLMs</h3>
+            <p>Ollama-hosted Llama 3 and Mistral for on-prem privacy, lower cost and offline inference.</p>
+          </article>
+        </div>
+
+        <div class="ai-split">
+          <div class="ai-stack glass reveal">
+            <h3>AI &amp; automation stack</h3>
+            <p>Hover a technology to highlight the projects where I use it.</p>
+            <ul class="stack-grid" id="ai-stack">
+              <li><button type="button" class="stack-item" data-tech="python"><b>Python</b><small>Async services,
+                    pipelines, agents</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="fastapi"><b>FastAPI</b><small>Typed, streaming AI
+                    APIs</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="langchain"><b>LangChain</b><small>Chains,
+                    retrievers, loaders</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="langgraph"><b>LangGraph</b><small>Stateful
+                    multi-agent graphs</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="openai"><b>OpenAI API</b><small>Tools &amp;
+                    structured outputs</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="ollama"><b>Ollama</b><small>Local Llama 3 &amp;
+                    Mistral</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="llms"><b>LLMs</b><small>Model choice, cost,
+                    latency</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="agents"><b>AI Agents</b><small>Planning, tools,
+                    memory</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="rag"><b>RAG</b><small>Hybrid retrieval +
+                    citations</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="prompt"><b>Prompt Engineering</b><small>System
+                    prompts, few-shot, evals</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="mcp"><b>MCP</b><small>Model Context Protocol
+                    servers</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="playwright"><b>Playwright</b><small>Headless
+                    browser automation</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="selenium"><b>Selenium</b><small>Fallback &amp;
+                    legacy automation</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="bs4"><b>BeautifulSoup</b><small>Fast HTML
+                    parsing</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="scraping"><b>Web Scraping</b><small>Proxies,
+                    retries, scheduling</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="mongodb"><b>MongoDB</b><small>Documents, logs,
+                    chat memory</small></button></li>
+              <li><button type="button" class="stack-item" data-tech="vectordb"><b>Vector Databases</b><small>ChromaDB,
+                    Pinecone, pgvector</small></button></li>
+            </ul>
+          </div>
+          <div class="prompt-card glass gborder reveal">
+            <h3><svg class="i">
+                <use href="#i-wand" />
+              </svg>Prompt engineering, done like code</h3>
+            <p>Versioned, schema-bound and evaluated. Here is an excerpt from LeadGenie's scoring prompt.</p>
+            <pre class="prompt"><span class="t">### SYSTEM</span>You are <span class="v">LeadGenie</span>, a B2B lead-qualification analyst.Reason step by step, but return ONLY JSON matching the <span class="v">LeadScore</span> schema.
+
+<span class="t">### CONTEXT</span>
+company:     <span class="v">{{company_profile}}</span>
+research:    <span class="v">{{web_findings}}</span>
+crm_history: <span class="v">{{zoho_activity}}</span>
+
+<span class="t">### RULES</span>
+- Cite evidence (url + quote) for every score.
+- Never invent data. Unknown → null.
+- confidence &lt; 0.6 → "needs_human_review": true
+<span class="c"># eval: 120 labelled leads · 100% schema-valid</span></pre>
+          </div>
+        </div>
+
+        <header class="section-head section-head--sub">
+          <h3 class="h3 reveal">Flagship AI projects</h3>
+        </header>
+        <div class="projects-grid projects-grid--ai" id="ai-grid" data-type="ai"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Skills</p>
+          <h2 class="h2 reveal" id="skills-title">A toolkit built for <em class="serif grad-text">production.</em></h2>
+          <p class="lead reveal">No vanity percentages, just what I use, how deeply, and where. Filter, search, or
+            select a skill for details.</p>
+        </header>
+        <div class="skills glass gborder reveal">
+          <div class="skills__bar">
+            <div class="tabs" role="tablist" aria-label="Skill categories">
+              <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="backend">Backend</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="ai">AI &amp; LLM</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="automation">Scraping &amp;
+                Automation</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="frontend">Frontend</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="data">Data</button>
+              <button class="tab" role="tab" aria-selected="false" data-filter="devops">DevOps &amp; Tools</button>
+            </div>
+            <label class="search"><svg class="i">
+                <use href="#i-search" />
+              </svg><input type="search" id="skill-search" placeholder="Search skills…" aria-label="Search skills"
+                autocomplete="off"></label>
+          </div>
+          <div class="skills__body">
+            <ul class="skill-cloud" id="skill-cloud">
+              <li><button type="button" class="skill" data-cat="backend" data-level="3" data-years="3.5+ years"
+                  data-used="Fyntune · Hub2 · D2i · all client platforms">Laravel</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="3" data-years="3.5+ years"
+                  data-used="Every role since 2022">PHP 8</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="3" data-years="3 years"
+                  data-used="Hub2 real-time layer · D2i services">Node.js</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="2" data-years="2+ years"
+                  data-used="D2i APIs · Hub2 sockets">Express.js</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="3" data-years="3.5+ years"
+                  data-used="Partner APIs (Fyntune) · 25+ APIs (D2i)">REST API Design</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="2" data-years="1+ year"
+                  data-used="Live-match platform (Hub2)">WebSockets</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="3" data-years="3 years"
+                  data-used="Bulk import engine · renewals automation">Queues &amp; Schedulers</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="2" data-years="1+ year"
+                  data-used="PolicyPilot · LeadGenie · ScrapeForge">FastAPI</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="2" data-years="3 years"
+                  data-used="All authenticated platforms">JWT / OAuth 2.0</button></li>
+              <li><button type="button" class="skill" data-cat="backend" data-level="2" data-years="2 years"
+                  data-used="Hub2 · e-commerce platform">Payment Gateways</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="2+ years"
+                  data-used="AI projects · scraping · automation scripts">Python</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1+ year"
+                  data-used="PolicyPilot · LeadGenie · ScrapeForge">OpenAI API</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1+ year"
+                  data-used="PolicyPilot (RAG chains, retrievers)">LangChain</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1 year"
+                  data-used="LeadGenie (stateful agent graph)">LangGraph</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1 year"
+                  data-used="PolicyPilot private mode">Ollama</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1+ year"
+                  data-used="PolicyPilot · hybrid retrieval + citations">RAG</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1 year"
+                  data-used="LeadGenie · MCP DevTools">AI Agents</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="3" data-years="1+ year"
+                  data-used="All AI projects · structured outputs & evals">Prompt Engineering</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1 year"
+                  data-used="MCP DevTools · LeadGenie tools">MCP</button></li>
+              <li><button type="button" class="skill" data-cat="ai" data-level="2" data-years="1 year"
+                  data-used="PolicyPilot · ScrapeForge">Embeddings</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="2" data-years="1+ year"
+                  data-used="ScrapeForge · LeadGenie research">Playwright</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="2" data-years="1+ year"
+                  data-used="ScrapeForge fallback workers">Selenium</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="2" data-years="1+ year"
+                  data-used="ScrapeForge parsing fast path">BeautifulSoup</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="2" data-years="1+ year"
+                  data-used="Price intelligence · lead research">Web Scraping</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="3" data-years="3 years"
+                  data-used="EdTech · e-commerce · website builder">Zoho CRM API</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="3" data-years="3 years"
+                  data-used="Fyntune policies · vendor catalogs">Bulk Import Pipelines</button></li>
+              <li><button type="button" class="skill" data-cat="automation" data-level="2" data-years="1 year"
+                  data-used="ScrapeForge">Proxy Rotation</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="3" data-years="3.5+ years"
+                  data-used="Every product">JavaScript ES6+</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="2" data-years="1+ year"
+                  data-used="D2i dashboards">React.js</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="2" data-years="1 year"
+                  data-used="Tooling · React apps">TypeScript</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="3" data-years="3.5+ years"
+                  data-used="This portfolio · client sites">HTML5 &amp; CSS3</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="2" data-years="2 years"
+                  data-used="Dashboards · landing pages">Tailwind CSS</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="3" data-years="3.5+ years"
+                  data-used="Laravel Blade UIs">Bootstrap</button></li>
+              <li><button type="button" class="skill" data-cat="frontend" data-level="3" data-years="3.5+ years"
+                  data-used="Broker portal · admin panels">jQuery &amp; AJAX</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="3" data-years="3.5+ years"
+                  data-used="All Laravel platforms">MySQL</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="2" data-years="1+ year"
+                  data-used="pgvector · side projects">PostgreSQL</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="2" data-years="2 years"
+                  data-used="D2i · AI project memory & logs">MongoDB</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="2" data-years="2+ years"
+                  data-used="Caching · queues · pub/sub">Redis</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="2" data-years="1 year"
+                  data-used="PolicyPilot (ChromaDB, pgvector)">Vector Databases</button></li>
+              <li><button type="button" class="skill" data-cat="data" data-level="3" data-years="3 years"
+                  data-used="60% faster reports · 40% faster APIs">Query Optimization</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="3" data-years="3.5+ years"
+                  data-used="Every team">Git &amp; GitHub</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="2" data-years="1+ year"
+                  data-used="AI projects · local environments">Docker</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="2" data-years="3 years"
+                  data-used="Servers & deployments">Linux</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="1" data-years="1 year"
+                  data-used="CI for side projects">GitHub Actions</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="3" data-years="3.5+ years"
+                  data-used="API testing & docs">Postman</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="2" data-years="2 years"
+                  data-used="Partner API documentation">Swagger / OpenAPI</button></li>
+              <li><button type="button" class="skill" data-cat="devops" data-level="3" data-years="3.5+ years"
+                  data-used="Sprint delivery at all companies">Agile / Jira</button></li>
+            </ul>
+            <aside class="skill-detail" id="skill-detail" aria-live="polite">
+              <p class="eyebrow">Skill details</p>
+              <h3>Select a skill</h3>
+              <p class="muted">See depth, years of use and the projects or companies where I applied it.</p>
+              <div class="skills__legend">
+                <span><i class="lv lv3"></i>Expert</span>
+                <span><i class="lv lv2"></i>Advanced</span>
+                <span><i class="lv lv1"></i>Proficient</span>
+              </div>
+            </aside>
+          </div>
+          <p class="skills__empty" id="skills-empty" hidden>No skills match that search.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">How I help teams</p>
+          <h2 class="h2 reveal" id="services-title">Where I create the <em class="serif grad-text">most leverage.</em>
+          </h2>
+        </header>
+        <div class="services-grid">
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-server" />
+              </svg></div>
+            <h3>Backend &amp; API Architecture</h3>
+            <p>Scalable Laravel, Node.js and FastAPI backends with clean domain models, versioned REST APIs, queues and
+              caching.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>API design &amp; documentation</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Queues, caching, RBAC</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Multi-tenant SaaS</li>
+            </ul>
+          </article>
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-bot" />
+              </svg></div>
+            <h3>AI Agents &amp; RAG Systems</h3>
+            <p>Production LLM features: retrieval-augmented copilots, LangGraph agents and MCP tool servers, with evals
+              and guardrails.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>RAG with citations</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Agents &amp; tool calling</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Local LLMs via Ollama</li>
+            </ul>
+          </article>
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-scan" />
+              </svg></div>
+            <h3>Web Scraping &amp; Data Pipelines</h3>
+            <p>Resilient Playwright and Selenium scrapers, LLM-assisted extraction, scheduling and clean datasets
+              delivered to your DB or API.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Dynamic &amp; protected sites</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Schema-validated JSON</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Monitoring &amp; alerts</li>
+            </ul>
+          </article>
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-workflow" />
+              </svg></div>
+            <h3>Workflow Automation &amp; Integrations</h3>
+            <p>CRM (Zoho), payment gateways, bulk imports and scheduled jobs that eliminate repetitive manual work.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Zoho CRM sync</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Payments &amp; webhooks</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Excel / CSV pipelines</li>
+            </ul>
+          </article>
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-layers" />
+              </svg></div>
+            <h3>Full-Stack Product Development</h3>
+            <p>From database schema to React UI: role-based dashboards, multi-tenant SaaS and e-commerce platforms.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Laravel + React</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Dashboards &amp; admin</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>E-commerce</li>
+            </ul>
+          </article>
+          <article class="service glass spot reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-gauge" />
+              </svg></div>
+            <h3>Performance &amp; Code Audits</h3>
+            <p>Profiling, query optimization, caching strategy and code-review standards that make systems faster and
+              safer to change.</p>
+            <ul>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>N+1 &amp; index audits</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Lighthouse tuning</li>
+              <li><svg class="i">
+                  <use href="#i-check" />
+                </svg>Review checklists</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements" aria-labelledby="ach-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Achievements</p>
+          <h2 class="h2 reveal" id="ach-title">Proof, <em class="serif grad-text">in numbers.</em></h2>
+        </header>
+        <div class="ach-grid">
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-rocket" />
+            </svg>
+            <p class="ach__num grad-text">50+</p>
+            <h3>Projects &amp; modules delivered</h3>
+            <p>Across InsurTech, e-commerce, EdTech, hospitality and real-time gaming.</p>
+          </article>
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-database" />
+            </svg>
+            <p class="ach__num grad-text">50K+</p>
+            <h3>Records per import batch</h3>
+            <p>Queue-driven bulk-import engine for insurance policies.</p>
+          </article>
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-workflow" />
+            </svg>
+            <p class="ach__num grad-text">80%</p>
+            <h3>Manual work removed</h3>
+            <p>Through CRM automation and bulk-data pipelines.</p>
+          </article>
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-zap" />
+            </svg>
+            <p class="ach__num grad-text">40%</p>
+            <h3>Faster APIs</h3>
+            <p>Query optimization, composite indexes and Redis caching.</p>
+          </article>
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-shield" />
+            </svg>
+            <p class="ach__num grad-text">99.9%</p>
+            <h3>Payment settlement accuracy</h3>
+            <p>Signed webhooks, idempotency and automated reconciliation.</p>
+          </article>
+          <article class="ach glass gborder reveal"><svg class="i">
+              <use href="#i-sparkles" />
+            </svg>
+            <p class="ach__num grad-text">4</p>
+            <h3>Open-source AI projects</h3>
+            <p>RAG, agents, MCP and scraping, with documented evals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB ============ -->
+    <section class="section" id="github" aria-labelledby="gh-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Open source</p>
+          <h2 class="h2 reveal" id="gh-title">Building in <em class="serif grad-text">public.</em></h2>
+          <p class="lead reveal">Live data from the GitHub API: repositories, languages and recent activity.</p>
+        </header>
+        <div class="gh glass gborder reveal" id="gh">
+          <div>
+            <div class="gh__profile">
+              <img class="gh__avatar" id="gh-avatar" src="https://avatars.githubusercontent.com/u/100862868?v=4"
+                alt="GitHub avatar of Yash Maheshwari" width="64" height="64" loading="lazy">
+              <div>
+                <h3 id="gh-name">Yash Maheshwari</h3>
+                <p class="muted" id="gh-login">@yash2208-get</p>
+              </div>
+              <a class="btn btn--glass btn--sm" href="https://github.com/yash2208-get" target="_blank"
+                rel="noopener"><svg class="i">
+                  <use href="#i-github" />
+                </svg>Follow</a>
+            </div>
+            <div class="gh__stats">
+              <div><b id="gh-repos">35</b><span>Public repos</span></div>
+              <div><b id="gh-stars">—</b><span>Total stars</span></div>
+              <div><b id="gh-followers">0</b><span>Followers</span></div>
+              <div><b id="gh-since">2022</b><span>On GitHub since</span></div>
+            </div>
+          </div>
+          <div class="gh__langs">
+            <p class="gh__label">Top languages</p>
+            <div class="lang-bar" id="gh-langbar"></div>
+            <ul class="lang-legend" id="gh-langs">
+              <li><i style="background:#4F5D95"></i>PHP</li>
+              <li><i style="background:#f1e05a"></i>JavaScript</li>
+              <li><i style="background:#e34c26"></i>HTML</li>
+            </ul>
+          </div>
+          <div class="gh__chart" id="gh-chart">
+            <img src="https://ghchart.rshah.org/7c5cff/yash2208-get" alt="GitHub contribution chart for yash2208-get"
+              loading="lazy">
+          </div>
+        </div>
+        <div class="repo-grid" id="gh-repos-grid">
+          <div class="repo glass skeleton"></div>
+          <div class="repo glass skeleton"></div>
+          <div class="repo glass skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Education &amp; training</p>
+          <h2 class="h2 reveal" id="edu-title">Foundations, <em class="serif grad-text">always compounding.</em></h2>
+        </header>
+        <div class="edu-grid">
+          <article class="edu glass reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-cap" />
+              </svg></div>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="org">JAN University</p>
+            <p class="when">2023 — Present</p>
+            <p>Advanced software engineering, distributed systems and data structures, applied directly to production
+              work.</p>
+          </article>
+          <article class="edu glass reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-cap" />
+              </svg></div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="org">Maharshi Dayanand Saraswati University</p>
+            <p class="when">2019 — 2021</p>
+            <p>Programming, databases, operating systems and computer-science fundamentals.</p>
+          </article>
+          <article class="edu glass reveal">
+            <div class="service__icon"><svg class="i">
+                <use href="#i-award" />
+              </svg></div>
+            <h3>Full Stack Web Development Program</h3>
+            <p class="org">Pepcoding Education (ODC) Pvt. Ltd.</p>
+            <p class="when">Feb 2022 — Aug 2022</p>
+            <p>6-month intensive: JavaScript, Node.js, PHP, Laravel and SQL, through real-world projects.</p>
+          </article>
+        </div>
+        <p class="learning reveal"><span>Currently exploring:</span><span class="chip-sm">LLM evaluation
+            (RAGAS)</span><span class="chip-sm">Kubernetes</span><span class="chip-sm">AWS</span><span
+            class="chip-sm">System design at scale</span></p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="h2 reveal" id="contact-title">Let's build something that <em class="serif grad-text">matters.</em>
+          </h2>
+          <p class="lead reveal">I'm open to Senior Software Engineer, Backend and AI Engineer roles, plus select
+            contract work on AI agents, automation and scraping. I usually reply within 24 hours.</p>
+          <div class="contact__list">
+            <button type="button" class="contact__item glass reveal" data-copy="yashajmera1203@gmail.com">
+              <span class="contact__icon"><svg class="i">
+                  <use href="#i-mail" />
+                </svg></span>
+              <span><small>Email · click to copy</small><b>yashajmera1203@gmail.com</b></span>
+              <svg class="i act">
+                <use href="#i-copy" />
+              </svg>
+            </button>
+            <a class="contact__item glass reveal" href="https://www.linkedin.com/in/yash-maheshwari800055" target="_blank"
+              rel="noopener">
+              <span class="contact__icon"><svg class="i">
+                  <use href="#i-linkedin" />
+                </svg></span>
+              <span><small>LinkedIn</small><b>in/yash-maheshwari</b></span>
+              <svg class="i act">
+                <use href="#i-external" />
+              </svg>
+            </a>
+            <a class="contact__item glass reveal" href="https://github.com/yash2208-get" target="_blank" rel="noopener">
+              <span class="contact__icon"><svg class="i">
+                  <use href="#i-github" />
+                </svg></span>
+              <span><small>GitHub</small><b>github.com/yash2208-get</b></span>
+              <svg class="i act">
+                <use href="#i-external" />
+              </svg>
+            </a>
+            <div class="contact__item glass reveal">
+              <span class="contact__icon"><svg class="i">
+                  <use href="#i-clock" />
+                </svg></span>
+              <span><small>Ajmer, India · IST</small><b><span id="local-time">--:--</span> local time</b></span>
+              <span class="avail"><span class="dot dot--live"></span>Available</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="form glass gborder reveal" id="contact-form" novalidate>
+          <h3 class="form__title">Send a message</h3>
+          <p class="form__sub">Tell me about the role or project. I'll reply within 24 hours.</p>
+          <div class="form__row">
+            <div class="field"><input id="f-name" name="name" type="text" placeholder=" " autocomplete="name" required
+                minlength="2"><label for="f-name">Your name</label>
+              <p class="field__error">Please enter your name.</p>
+            </div>
+            <div class="field"><input id="f-email" name="email" type="email" placeholder=" " autocomplete="email"
+                required><label for="f-email">Work email</label>
+              <p class="field__error">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field"><input id="f-company" name="company" type="text" placeholder=" "
+                autocomplete="organization"><label for="f-company">Company (optional)</label></div>
+            <div class="field"><select id="f-type" name="type">
+                <option>Full-time role</option>
+                <option>Contract / Freelance</option>
+                <option>AI / Automation project</option>
+                <option>Just saying hi</option>
+              </select><label for="f-type">I'm reaching out about</label></div>
+          </div>
+          <div class="field"><textarea id="f-message" name="message" placeholder=" " required
+              minlength="10"></textarea><label for="f-message">Message</label>
+            <p class="field__error">Please write at least 10 characters.</p>
+          </div>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form__foot">
+            <p class="form__note"><svg class="i">
+                <use href="#i-lock" />
+              </svg>Your details are only used to reply.</p>
+            <button class="btn btn--primary magnetic" type="submit"><span>Send message</span><svg class="i">
+                <use href="#i-send" />
+              </svg></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="brand"><span class="brand__mark">YM</span><span class="brand__name">Yash
+              Maheshwari</span></a>
+          <p>Senior Software Engineer building scalable backends and AI automation. Backends that scale. AI that ships.
+          </p>
+          <div class="hero__social">
+            <a href="https://github.com/yash2208-get" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i">
+                <use href="#i-github" />
+              </svg></a>
+            <a href="https://www.linkedin.com/in/yash-maheshwari800055" target="_blank" rel="noopener"
+              aria-label="LinkedIn"><svg class="i">
+                <use href="#i-linkedin" />
+              </svg></a>
+            <a href="mailto:yashajmera1203@gmail.com" aria-label="Email"><svg class="i">
+                <use href="#i-mail" />
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <nav class="footer__links" aria-label="Footer">
+            <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Selected work</a><a
+              href="#ai">AI Lab</a><a href="#skills">Skills</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="footer__links">
+            <a href="assets/Yash_Maheshwari_Resume.pdf" download data-resume>Download résumé</a>
+            <a href="#contact">Contact form</a>
+            <a href="https://github.com/yash2208-get" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/yash-maheshwari" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__big" aria-hidden="true">Yash Maheshwari</p>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Yash Maheshwari. All rights reserved.</p>
+        <p>Hand-crafted with HTML, CSS &amp; vanilla JavaScript · Press <kbd>Ctrl</kbd> <kbd>K</kbd></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ OVERLAYS ============ -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__panel">
+      <button class="modal__close" type="button" data-close aria-label="Close case study"><svg class="i">
+          <use href="#i-x" />
+        </svg></button>
+      <div id="modal-body"></div>
+    </article>
+  </div>
+
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk__backdrop" data-close></div>
+    <div class="cmdk__panel" role="dialog" aria-modal="true" aria-label="Command menu">
+      <div class="cmdk__search"><svg class="i">
+          <use href="#i-search" />
+        </svg><input id="cmdk-input" type="text" placeholder="Type a command or search…" autocomplete="off"
+          aria-label="Search commands"><kbd>ESC</kbd></div>
+      <ul class="cmdk__list" id="cmdk-list" role="listbox"></ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <svg class="to-top__ring" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" />
+    </svg>
+    <svg class="i">
+      <use href="#i-arrow-up" />
+    </svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yash2208-get.github.io/yash-maheshwari/sitemap.xml
